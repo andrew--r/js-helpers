@@ -1,0 +1,21 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "extends": "airbnb-base",
+  "rules": {
+    "indent": ["error", "tab", {
+      "SwitchCase": 1
+    }],
+    "no-tabs": "off",
+    "no-param-reassign": "warn",
+    "prefer-const": "error",
+    "arrow-parens": ["error", "always"]
+  }
+}

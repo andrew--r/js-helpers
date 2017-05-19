@@ -1,0 +1,13 @@
+# General files
+*~
+.DS_Store
+
+# Development stuff
+node_modules/
+coverage/
+*.sublime-workspace
+*.pyc
+.vagrant
+.idea
+.vscode
+npm-debug.*
