@@ -6,13 +6,13 @@
   "author": "Andrew Romanov <me@andrew-r.ru>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint ./src",
+    "lint": "eslint ./src/",
     "check-types": "flow",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
+    "test": "jest ./src/",
+    "test:watch": "yarn test -- --watch",
+    "test:coverage": "yarn test -- --coverage",
     "qa": "yarn lint && yarn check-types && yarn test",
-    "prebuild": "rm -rf ./lib",
+    "prebuild": "rm -rf ./lib/",
     "build": "flow-remove-types --pretty ./src/ --out-dir ./lib/",
     "build:add": "git add ./lib/"
   },
