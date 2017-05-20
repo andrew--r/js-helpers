@@ -13,7 +13,7 @@
     "test:coverage": "yarn test -- --coverage",
     "qa": "yarn lint && yarn check-types && yarn test",
     "prebuild": "rm -rf ./lib/",
-    "build": "flow-remove-types --pretty ./src/ --out-dir ./lib/",
+    "build": "flow-remove-types --pretty ./src/ --out-dir ./lib/ --ignore .spec.js",
     "build:add": "git add ./lib/"
   },
   "pre-commit": [
