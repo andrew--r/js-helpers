@@ -8,7 +8,7 @@ export default function objectToSearchParams(params: {} = {}) : string {
     const values: Array<string> = castArray(params[key]);
 
     return values
-      .map((value) => `${encodeURIComponent(key)}=${encodeURIComponent(value)}`)
+      .map((value) => [key, value].map(encodeURIComponent).join('='))
       .join('&');
   });
   const result = entries.join('&');
